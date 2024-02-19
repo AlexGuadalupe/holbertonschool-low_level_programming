@@ -1,8 +1,7 @@
 #include <stdio.h>
-
 /**
- *  my first comment
- *
+ *main- min function
+ *Return: return value
 */
 int main(void)
 {
