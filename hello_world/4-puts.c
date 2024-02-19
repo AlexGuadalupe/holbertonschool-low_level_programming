@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main- min function
+ *main- main function
  *Return: return value
 */
 int main(void)
