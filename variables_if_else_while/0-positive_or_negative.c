@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- *main- entry ponit
- *Return: always (0)
+*main- entry ponit
+*Return: always (0)
 */
 int main(void)
 {
@@ -13,10 +13,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("The number is positive\n");
+		printf("%d is negative\n");
 	if (n == 0)
-		printf("The number is zero\n");
+		printf("%d is zero\n");
 	if (n < 0)
-		printf("The number is negative\n");
+		printf("%d is positive\n");
 	return (0);
 }
