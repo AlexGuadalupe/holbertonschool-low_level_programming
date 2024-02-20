@@ -1,4 +1,6 @@
+#!/bin/bash
 C-HELLO, WORLD!
+20204-02-1iC-HELLO, WORLD!
 20204-02-19
 
 Before tasks:
@@ -124,4 +126,4 @@ TASKS :
 		printf("Size of a float: %d byte(s)\n", sizeof(float));
 		return (0);
 
-		}
+		}9
