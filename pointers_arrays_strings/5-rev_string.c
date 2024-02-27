@@ -2,7 +2,7 @@
 
 /**
 * rev_string - check point
-* @s: function that reverses a string. 
+* @s: function that reverses a string.
 * Return: void
 */
 
