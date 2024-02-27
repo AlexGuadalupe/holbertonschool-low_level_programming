@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-* _strlen- entry point 
-@s:function that returns the length of a string.
-Return: int
+* _strlen- entry point
+* @s:function that returns the length of a string.
+* Return: int
 */
 
 int _strlen(char *s)
