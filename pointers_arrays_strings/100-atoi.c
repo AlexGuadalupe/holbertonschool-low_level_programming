@@ -24,5 +24,5 @@ else if (null_flag)
 break;
 s++;
 }
-return (num * sign);
+return (num *sign);
 }
