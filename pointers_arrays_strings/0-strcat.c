@@ -22,5 +22,5 @@ for (j = 0; j < size + 1 && src[j]; j++)
 dest[size++] = src[j];
 }
 
-return ('\0');
+return (dest);
 }
