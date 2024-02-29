@@ -1,51 +1,27 @@
 #include "main.h"
+
 /**
- *cap_string - capitalizes every wordof a string
+ * cap_string - capitalizes every wordof a string
  * @s: string to modify
  * Return: the resulting string
 */
-char *leet(char *input)
+char *cap_string(char *s)
 {
-if (input == NULL)
+int i, j;
+char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+'!', '?', '"', '(', ')', '{', '}'};
+for (i = 0; s[i] != '\0'; i++)
 {
-return (NULL);
-}
-
-for (int i = 0; input[i] != '\0'; i++)
+if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+s[i] -= 32;
+for (j = 0; j < 13; j++)
 {
-for (int j = 0; j < 3; j++)
+if (s[i] == spe[j])
 {
-if ((input[i] == 'a' + j) || (input[i] == 'A' + j))
-{
-input[i] = '4';
-break;
-}
-}
-
-for (int j = 4; j < 6; j++)
-{
-if ((input[i] == 'e' + (j - 4)) || (input[i] == 'E' + (j - 4)))
-{
-input[i] = '3';
-break;
+if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+s[i + 1] -= 32;
 }
 }
-
-if ((input[i] == 'o') || (input[i] == 'O'))
-{
-input[i] = '0';
 }
-
-if ((input[i] == 't') || (input[i] == 'T'))
-{
-input[i] = '7';
-}
-
-if ((input[i] == 'l') || (input[i] == 'L'))
-{
-input[i] = '1';
-}
-}
-
-return (input);
+return (s);
 }
