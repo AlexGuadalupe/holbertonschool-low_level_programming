@@ -9,18 +9,20 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-	while (*dest)
-	{
-		dest++;
-	}
-	while (*src && n > 0)
-	{
-		*dest = *src;
-		*dest++;
-		*src++;
-		n--;
-	}
+while (*dest != '\0')
+{
+dest++;
+}
 
-	*dest = '\0';
-	return (dest);
+while (*src != '\0' && n > 0)
+{
+*dest = *src;
+dest++;
+src++;
+n--;
+}
+
+*dest = '\0';
+
+return (dest);
 }
