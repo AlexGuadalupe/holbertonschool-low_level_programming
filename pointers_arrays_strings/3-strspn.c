@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * int _strspn- function that gets the length of a prefix substring.
+ * _strspn- function that gets the length of a prefix substring.
  * @s: string to be scanned.
  * @accept: string with the characters to match.
  * Return: number of bytes in the initial segment of s which consist only of
