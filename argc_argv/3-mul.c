@@ -12,7 +12,7 @@ int a, b, product;
 (void) argc;
 a = atoi(argv[1]);
 b = atoi(argv[2]);
-product = a * b;
+product =(a * b);
 printf("%d\n", product);
 return (0);
 }
