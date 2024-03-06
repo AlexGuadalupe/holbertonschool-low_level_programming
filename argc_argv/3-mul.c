@@ -1,18 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+
 /**
- * main - main function
- * @argc: arg count
- * @argv: arg name
- * Return: 0 if successful
-*/
+* main - prints the name of the file.
+* @argc: parameters for the function.
+* @argv: parameters for the function.
+* Return: 0 (success)
+**/
+
 int main(int argc, char *argv[])
 {
-int a, b, product;
-(void) argc;
-a = atoi(argv[1]);
-b = atoi(argv[2]);
-product =(a * b);
-printf("%d\n", product);
-return (0);
+    if (argc < 3)
+    {
+        printf("Error\n");
+    }
+    else
+    {
+    int x = argc;
+    int product = atoi(argv[x - 1]) * atoi(argv[x - 2]);
+
+    printf("%d\n", product);
+    }
+    return (0);
 }
