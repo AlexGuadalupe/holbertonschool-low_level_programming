@@ -4,18 +4,16 @@
 #include <limits.h>
 
 /**
- *malloc_checked - allocates memory using malloc
- *@b: unsigned int type
- *Return: to pointer
-*
+ * *malloc_checked - allocates memory using malloc
+ * @b: unsigned int type
+ * Return: to pointer
 */
-
 void *malloc_checked(unsigned int b)
 {
-int *pointer;
+int *ptr;
 
-pointer = malloc(b);
-if (pointer == NULL)
+ptr = malloc(b);
+if (ptr == NULL)
 exit(98);
-return (pointer);
+return (ptr);
 }
