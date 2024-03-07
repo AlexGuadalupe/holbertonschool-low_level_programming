@@ -26,6 +26,9 @@ s2 = "";
 while (s1[i])
 i++;
 
+while (s2[a])
+a++;
+
 m = i + a;
 s = malloc(sizeof(char) * (m + 1));
 
