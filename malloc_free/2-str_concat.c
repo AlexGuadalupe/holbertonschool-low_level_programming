@@ -1,52 +1,42 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 
 /**
- *_strdup - concatenates a string into a string
- *@s1: string to concatenate
- *@s2: string to concatenate
- *Return: NULL
- */
-
+ * str_concat - Concatenate a string into a string
+ * @s1: the string to concatenate
+ * @s2: the string to concatenate
+ *
+ * Return: the two strings concatenated
+*/
 char *str_concat(char *s1, char *s2)
 {
-int i = 0;
-int a = 0;
-int e = 0;
-int m = 0;
+int i = 0, j = 0, k = 0, l = 0;
 char *s;
-
 if (s1 == NULL)
 s1 = "";
-
 if (s2 == NULL)
 s2 = "";
-
 while (s1[i])
 i++;
-
-while (s2[a])
-a++;
-
-m = i + a;
-s = malloc(sizeof(char) * (m + 1));
-
+while (s2[j])
+j++;
+l = i + j;
+s = malloc(sizeof(char) * (l + 1));
 if (s == NULL)
 return (NULL);
-
-while (e < m)
+j = 0;
+while (k < l)
 {
-if (e <= i)
-s[e] = s1[e];
-
-if (e >= i)
+if (k <= i)
+s[k] = s1[k];
+if (k >= i)
 {
-s[e] = s2[a];
-a++;
+s[k] = s2[j];
+j++;
 }
-e++;
+k++;
 }
-s[e] = '\0';
+s[k] = '\0';
 return (s);
 }
