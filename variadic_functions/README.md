@@ -15,8 +15,8 @@ Las funciones va_start, va_arg y va_end son macros utilizadas en lenguajes como 
 
 El calificador const se utiliza en lenguajes como C y C++ para indicar que una variable o un objeto no puede ser modificado una vez que se ha inicializado. Se puede aplicar a variables, punteros y miembros de estructuras, entre otros. Hay varias razones por las que se utiliza el calificador const:
 
-    Seguridad y robustez del código: Al marcar ciertas variables como constantes, se evita que su valor sea cambiado accidentalmente durante la ejecución del programa. Esto puede ayudar a prevenir errores difíciles de rastrear y depurar.
+ Seguridad y robustez del código: Al marcar ciertas variables como constantes, se evita que su valor sea cambiado accidentalmente durante la ejecución del programa. Esto puede ayudar a prevenir errores difíciles de rastrear y depurar.
 
-    Documentación del código: El uso de const puede servir como documentación para otros programadores, indicando que ciertas variables o parámetros de funciones no deben ser modificados en ciertos contextos.
+ Documentación del código: El uso de const puede servir como documentación para otros programadores, indicando que ciertas variables o parámetros de funciones no deben ser modificados en ciertos contextos.
 
-    Optimizaciones del compilador: En algunos casos, el compilador puede realizar optimizaciones basadas en el conocimiento de que ciertas variables son constantes, lo que puede mejorar el rendimiento del código.
+ Optimizaciones del compilador: En algunos casos, el compilador puede realizar optimizaciones basadas en el conocimiento de que ciertas variables son constantes, lo que puede mejorar el rendimiento del código.
