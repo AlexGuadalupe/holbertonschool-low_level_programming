@@ -1,35 +1,32 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+* print_list - prints all str elements of the linked list
+* @h: pointer to the head of a linked list.
+* Return: counts the amount of links
+*/
 size_t print_list(const list_t *h)
 {
-const list_t *current = h;
-size_t count = 0;
+	size_t count = 0;
 
-printf("[");
-while (current != NULL) 
-{
-if (current->str == NULL) 
-{
-printf("(nil)");
-}
-else 
-{
-printf("%s", current->str);
-}
+	if (h == NULL)
+	{
+		return (0);
+	}
 
-count++;
-current = current->next;
-if (current != NULL) 
-{
-printf(", ");
-}
-}
-printf("]\n");
-
-return count;
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+		{
+			printf("[0] (nil)\n");
+			count++;
+		}
+		else
+		{
+			printf("[%d] %s\n", h->len, h->str);
+			count++;
+		}
+		h = h->next;
+	}
+	return (count);
 }
